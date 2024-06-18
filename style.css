@@ -252,6 +252,11 @@ body {
     }
 
     .add-a-book-btn {
-        bottom: 50px;
+        bottom: 40px;
+        right: 4px;
+    }
+
+    .books {
+        height: 90.5vh;
     }
 }
