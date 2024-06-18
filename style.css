@@ -122,6 +122,7 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.425);
     outline: none;
     width: 60px;
+    position: fixed;
     font-size: 27px;
     text-align: center;
     height: 60px;
@@ -244,5 +245,9 @@ body {
     .add-a-book-form {
         width: 80vw;
 
+    }
+
+    .title {
+        font-size: 25px;
     }
 }
