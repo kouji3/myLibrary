@@ -79,7 +79,7 @@ body {
     font-size: 21px;
     letter-spacing: 1px;
     
-    height: 35px;
+    height: 43px;
 }
 
 .book-status-toggler.read {
@@ -239,7 +239,7 @@ body {
     }
     
     .add-a-book {
-        padding: 25px 15px;
+        padding: 95px 15px;
     }
 
     .add-a-book-form {
