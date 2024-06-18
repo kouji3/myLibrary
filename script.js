@@ -14,9 +14,7 @@ const cancleBookBtn = document.querySelector("#cancle-the-book-addition");
 
 
 
-let bookTitle = "";
-let bookAuthor = "";
-let bookPages = null;
+
 
 
 
