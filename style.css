@@ -250,4 +250,8 @@ body {
     .title {
         font-size: 25px;
     }
+
+    .add-a-book-btn {
+        bottom: 50px;
+    }
 }
