@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library</title>
+        <link rel="icon" href="lib.png">
+        <link rel="stylesheet" href="style.css">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="add-a-book">
+            <button type="button" class="add-a-book-btn">+</button>
+        </div>
+        <h1 class="title">My Library</h1>
+        <div class="line"></div>
+
+        <div class="books">
+            
+        </div>
+
+        <div class="overlay"></div>
+
+        <form class="add-a-book-form">
+            <div class="book-title-input">
+                <label for="book-title-i">Book Title: </label>
+                <input type="text" id="book-title-i" placeholder="Book-Title" required>
+            </div>
+            <div class="book-author-input">
+                <label for="book-author-i">Book Author: </label>
+                <input type="text" id="book-author-i" placeholder="Book-Author" required>
+            </div>
+            <div class="book-pages-input">
+                <label for="book-pages-i">Book Pages: </label>
+                <input type="number" id="book-pages-i" placeholder="Book-Pages" required>
+            </div>
+
+            <div id="book-status-input">
+                <label for="book-status-i">Have You Read This Book?</label>
+                <input type="checkbox" id="book-status-i">
+            </div>
+
+            <div id="add-cancle-btns">
+                <button type="button" id="cancle-the-book-addition">Cancle</button>
+                <button type="submit" id="submit-book-btn">Add</button>
+            </div>
+
+        </form>
+    </body>
+</html>

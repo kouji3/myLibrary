@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    letter-spacing: 0.8px;
+}
+
+body {
+    position: relative;
+}
+
+.title {
+    
+    padding: 20px 40px;
+    font-family: sans-serif;
+}
+
+.line {
+    background-color: black;
+    height: 1px;
+}
+
+.books {
+    padding: 15px;
+    width: 100vw;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    height: 91.4vh;
+    overflow: auto;
+    /* border: 1px solid red; */
+}
+
+.book {
+    width: 270px;
+    position: relative;
+    height: 300px;
+    padding: 25px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #cfcccc;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+}
+
+.book-title {
+    overflow: hidden;
+    color: rgb(49, 49, 49);
+    text-overflow: ellipsis;
+    width: 100%;
+    
+    text-align: center;
+    padding: 0 8px;
+}
+
+.book-author {
+    color: rgb(107, 107, 107);
+    font-size: 21px;
+    overflow: hidden;
+    
+    text-overflow: ellipsis;
+    width: 100%;
+    padding: 0 25px;
+    text-align: center;
+}
+
+.book-pages {
+    font-size: 21px;
+}
+
+.book-status-toggler {
+    width: 100%;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 21px;
+    letter-spacing: 1px;
+    
+    height: 35px;
+}
+
+.book-status-toggler.read {
+    background-color: #abca63;
+}
+
+.book-status-toggler.not-read {
+    background-color: #ef233b9d;
+}
+
+
+
+.delete-book-btn {
+    position: absolute;
+    align-self: flex-end;
+    top: 3px;
+    font-size: 21px;
+    right: 3px;
+    color: #ff0000;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-book-btn:hover {
+    color: #db1b1b;
+}
+
+
+.add-a-book {
+    position: absolute;
+    width: 100vw;
+    justify-content: flex-end;
+    padding: 50px 45px;
+    height: 100vh;
+    display: flex;
+}
+
+.add-a-book-btn {
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    outline: none;
+    width: 60px;
+    font-size: 27px;
+    text-align: center;
+    height: 60px;
+    z-index: 5;
+    cursor: pointer;
+    color: #03045e;
+    transition: all 0.3s ease;
+    background-color: #a8dadc;
+    align-self: flex-end;
+}
+
+.add-a-book-btn:hover {
+    background-color: #f1faee;
+}
+
+.overlay {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    cursor: pointer;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.425);
+    z-index: 8;
+    backdrop-filter: blur(8px);
+    display: none;
+}
+
+
+
+.overlay.show {
+    display: block;
+}
+
+.add-a-book-form {
+    width: 400px;
+    height: fit-content;
+    background-color: #0d1b2a;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding: 20px 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8;
+    display: none;
+}
+
+.add-a-book-form.show {
+    display: flex;
+}
+
+
+.add-a-book-form > div {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    color: white;
+}
+
+.add-a-book-form > div > label {
+    font-size: 18px;
+}
+
+#book-title-i , #book-author-i, #book-pages-i {
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    height: 30px;
+    padding: 0 5px;
+    font-size: 16px;
+}
+
+#book-status-input {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+#book-status-input > input {
+    width: 17px;
+    cursor: pointer;
+   
+}
+
+#add-cancle-btns {
+    display: flex;
+    flex-direction: row;
+}
+
+#add-cancle-btns > * {
+    flex-grow: 1;
+    cursor: pointer;
+    height: 37px;
+    font-size: 17px;
+    outline: none;
+    color: white;
+    border: none;
+}
+
+#add-cancle-btns > :nth-child(1) {
+    background-color: #c1121f;
+}
+
+#submit-book-btn {
+    background-color: #4361ee;
+}
+
+
+@media (max-width: 420px) {
+
+    .book {
+        flex-grow: 1;
+    }
+    
+    .add-a-book {
+        padding: 25px 15px;
+    }
+
+    .add-a-book-form {
+        width: 80vw;
+
+    }
+}
